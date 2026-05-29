@@ -1,22 +1,5 @@
 name: Disable Fake-IP
-desc: Keep original subscription, only switch DNS enhanced-mode to redir-host
+desc: Switch DNS enhanced-mode to redir-host only
 
 dns:
-  enable: true
-  ipv6: false
   enhanced-mode: redir-host
-  use-hosts: true
-
-  nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-    - tls://dot.pub:853
-    - tls://dns.alidns.com:853
-
-  default-nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-
-  proxy-server-nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
