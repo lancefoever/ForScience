@@ -1,3 +1,6 @@
+name: Disable Fake-IP
+desc: Keep original subscription, only switch DNS enhanced-mode to redir-host
+
 dns:
   enable: true
   ipv6: false
